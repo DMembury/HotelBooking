@@ -45,7 +45,7 @@ namespace Waracle.HotelBooking.Controllers
             }
 
             var hotelsContainingArgument = await this.DbContext.Hotels
-                .FirstOrDefaultAsync(hotel => hotel.Name.ToLower().Contains(hotelName.ToLower()));
+                .FirstOrDefaultAsync(hotel => hotel.Name.ToLower().Contains(hotelName.ToLower())).ConfigureAwait(false);
 
             if (hotelsContainingArgument == default)
             {

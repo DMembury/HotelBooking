@@ -61,6 +61,60 @@ namespace Waracle.HotelBooking.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unable to find a booking for the given ID..
+        /// </summary>
+        internal static string BookingInfo_Get_NotFound_BadId {
+            get {
+                return ResourceManager.GetString("BookingInfo_Get_NotFound_BadId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The end-date for the booking is invalid and cannot be accepted..
+        /// </summary>
+        internal static string BookRoom_Post_BadRequest_BadBookingEnd {
+            get {
+                return ResourceManager.GetString("BookRoom_Post_BadRequest_BadBookingEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot book a room for a past date..
+        /// </summary>
+        internal static string BookRoom_Post_BadRequest_PastBooking {
+            get {
+                return ResourceManager.GetString("BookRoom_Post_BadRequest_PastBooking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The given room cannot hold the amount of guests requested..
+        /// </summary>
+        internal static string BookRoom_Post_BadRequest_TooManyGuests {
+            get {
+                return ResourceManager.GetString("BookRoom_Post_BadRequest_TooManyGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The given room ID was not found..
+        /// </summary>
+        internal static string BookRoom_Post_NotFound_BadRoom {
+            get {
+                return ResourceManager.GetString("BookRoom_Post_NotFound_BadRoom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to create the requested booking due to an internal server error..
+        /// </summary>
+        internal static string BookRoom_Post_ServerError_BookingFailed {
+            get {
+                return ResourceManager.GetString("BookRoom_Post_ServerError_BookingFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please provide a valid hotel name..
         /// </summary>
         internal static string HotelInfo_Get_BadRequest_EmptyName {

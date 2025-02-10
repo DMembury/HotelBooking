@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace Waracle.HotelBooking.Request
 {
     /// <summary>

@@ -61,6 +61,24 @@ namespace Waracle.HotelBooking.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The given hotel ID was not found..
+        /// </summary>
+        internal static string AvailableRooms_Get_BadRequest_BadHotel {
+            get {
+                return ResourceManager.GetString("AvailableRooms_Get_BadRequest_BadHotel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No rooms are available in the given hotel for the given date range, or the required occupancy..
+        /// </summary>
+        internal static string AvailableRooms_Get_NotFound_NoAvailableRooms {
+            get {
+                return ResourceManager.GetString("AvailableRooms_Get_NotFound_NoAvailableRooms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unable to find a booking for the given ID..
         /// </summary>
         internal static string BookingInfo_Get_NotFound_BadId {
@@ -70,11 +88,20 @@ namespace Waracle.HotelBooking.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The end-date for the booking is invalid and cannot be accepted..
+        ///   Looks up a localized string similar to The end-date for the booking cannot be before the start-date..
         /// </summary>
         internal static string BookRoom_Post_BadRequest_BadBookingEnd {
             get {
                 return ResourceManager.GetString("BookRoom_Post_BadRequest_BadBookingEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This room is already booked for the given date..
+        /// </summary>
+        internal static string BookRoom_Post_BadRequest_Conflict {
+            get {
+                return ResourceManager.GetString("BookRoom_Post_BadRequest_Conflict", resourceCulture);
             }
         }
         

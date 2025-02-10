@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Waracle.HotelBooking.Data.Models;
-using Waracle.HotelBooking.Properties;
 using Swashbuckle.AspNetCore.Annotations;
+using Waracle.HotelBooking.Data.Models;
+using Waracle.HotelBooking.Domain.Model;
+using Waracle.HotelBooking.Properties;
 using Waracle.HotelBooking.Request;
-using Waracle.HotelBooking.Model;
 
 namespace Waracle.HotelBooking.Controllers
 {
@@ -35,7 +35,7 @@ namespace Waracle.HotelBooking.Controllers
         [SwaggerResponse(200, "A matching hotel was successfully found.", typeof(HotelDisplayProxy))]
         [SwaggerResponse(400, "The search term is absent or empty.", typeof(string))]
         [SwaggerResponse(404, "No matching hotel was found.", typeof(string))]
-        public async Task<ActionResult<HotelDisplayProxy>> Get([FromQuery]HotelInfoRequest request)
+        public async Task<ActionResult<HotelDisplayProxy>> GetAsync([FromQuery]HotelInfoRequest request)
         {
             var hotelName = request.Name;
 

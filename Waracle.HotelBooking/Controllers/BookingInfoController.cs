@@ -1,10 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Annotations;
 using Waracle.HotelBooking.Data.Models;
 using Waracle.HotelBooking.Properties;
-using Swashbuckle.AspNetCore.Annotations;
-using Waracle.HotelBooking.Request;
-using Waracle.HotelBooking.Model;
 using Waracle.HotelBooking.Response;
 
 namespace Waracle.HotelBooking.Controllers
@@ -35,7 +33,7 @@ namespace Waracle.HotelBooking.Controllers
         [SwaggerOperation("Get information about a booking given its unique ID.")]
         [SwaggerResponse(200, "A matching booking was successfully found.", typeof(BookingInfoResponse))]
         [SwaggerResponse(404, "No matching booking was found.", typeof(string))]
-        public async Task<ActionResult<BookingInfoResponse>> Get([FromQuery]string bookingId)
+        public async Task<ActionResult<BookingInfoResponse>> GetAsync([FromQuery]string bookingId)
         {
             var booking = await this.DbContext.Bookings
                 .Include(booking => booking.Room)

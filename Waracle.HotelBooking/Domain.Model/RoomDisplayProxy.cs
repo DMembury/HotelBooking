@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using Waracle.HotelBooking.Data.Models;
 
-namespace Waracle.HotelBooking.Model
+namespace Waracle.HotelBooking.Domain.Model
 {
     /// <summary>
     /// Proxy over <see cref="Room"/> to prevent EF-specific properties being serialised in API output.

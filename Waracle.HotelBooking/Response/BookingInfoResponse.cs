@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 using Waracle.HotelBooking.Data.Models;
-using Waracle.HotelBooking.Model;
+using Waracle.HotelBooking.Domain.Model;
 
 namespace Waracle.HotelBooking.Response
 {

@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AvailableRooms_Get_BadRequest_BadHotel" xml:space="preserve">
+    <value>The given hotel ID was not found.</value>
+  </data>
+  <data name="AvailableRooms_Get_NotFound_NoAvailableRooms" xml:space="preserve">
+    <value>No rooms are available in the given hotel for the given date range, or the required occupancy.</value>
+  </data>
   <data name="BookingInfo_Get_NotFound_BadId" xml:space="preserve">
     <value>Unable to find a booking for the given ID.</value>
   </data>
   <data name="BookRoom_Post_BadRequest_BadBookingEnd" xml:space="preserve">
-    <value>The end-date for the booking is invalid and cannot be accepted.</value>
+    <value>The end-date for the booking cannot be before the start-date.</value>
+  </data>
+  <data name="BookRoom_Post_BadRequest_Conflict" xml:space="preserve">
+    <value>This room is already booked for the given date.</value>
   </data>
   <data name="BookRoom_Post_BadRequest_PastBooking" xml:space="preserve">
     <value>Cannot book a room for a past date.</value>
